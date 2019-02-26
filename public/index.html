@@ -19,6 +19,18 @@
         margin-bottom: -7px;
       }
 
+      .m-0 {
+        margin: 0;
+      }
+
+      .yellow-bg {
+        background: rgb(247,170,49); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(247,170,49,1) 0%, rgba(247,204,49,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7aa31', endColorstr='#f7cc31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
       /* Header */
       .main-header {
         background-color: #517FB9;
@@ -107,12 +119,6 @@
 
       /* Equipment Info Block */
       .equipment-info-block {
-        background: rgb(247,170,49); /* Old browsers */
-        background: -moz-linear-gradient(-45deg, rgba(247,170,49,1) 0%, rgba(247,204,49,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(-45deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(135deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7aa31', endColorstr='#f7cc31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
         padding: 20px 0;
       }
 
@@ -130,6 +136,15 @@
       .equipment-info__link {
         color: white;
         font-size: 20px;
+      }
+
+      .everything-sells__title {
+        color: white;
+        font-size: 20px;
+      }
+
+      .everything-sells__subtitle {
+        font-size: 24px;
       }
     </style>
   </head>
@@ -307,7 +322,7 @@
 
             <!-- Start of row 5 -->
             <tr class="row-5">
-              <td class="equipment-info-block">
+              <td class="equipment-info-block yellow-bg">
                 <!-- Second Image grid -->
                 <table cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
                   <tbody>
@@ -338,7 +353,53 @@
               </td>
             </tr>
             <!-- End of row 5 -->
-          
+
+            <!-- Start of row 6 -->
+            <tr class="row-6">
+              <td>
+                <table cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="bm-image" src="./img/ovens.png" alt="double door oven" />
+                      </td>
+                      <td>
+                        <img class="bm-image" src="./img/mg.png" alt="double door oven" />
+                      </td>
+                      <td>
+                        <img class="bm-image" src="./img/4-wheeler.png" alt="double door oven" />
+                      </td>
+                      <td>
+                        <img class="bm-image" src="./img/ir-compressor.png" alt="double door oven" />
+                      </td>
+                    </tr>
+                    <tr class="yellow-bg everything-sells-block">
+                      <td colspan="4" align="center" style="padding: 20px 0;">
+                        <table cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <h4 class="m-0 everything-sells__title">
+                                  So Come Spend the Day with Us.
+                                </h4>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td colspan="4" align="center">
+                                <h5 class="m-0 everything-sells__subtitle">
+                                  Everything Sells!
+                                </h5>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </td>
+            </tr>
+            <!-- End of row 6 -->
 
             <!-- Start of Hero "Let's you.." row -->
             <tr class="row-2">
