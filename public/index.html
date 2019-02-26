@@ -14,6 +14,11 @@
         max-width: 100%;
       }
 
+      /* helper classes */
+      .bm-image {
+        margin-bottom: -7px;
+      }
+
       /* Header */
       .main-header {
         background-color: #517FB9;
@@ -98,6 +103,33 @@
       /* Photo Section */
       .pickup-image {
         margin-bottom: -6px;
+      }
+
+      /* Equipment Info Block */
+      .equipment-info-block {
+        background: rgb(247,170,49); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(247,170,49,1) 0%, rgba(247,204,49,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(247,170,49,1) 0%,rgba(247,204,49,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7aa31', endColorstr='#f7cc31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+        padding: 20px 0;
+      }
+
+      .equipment-info__title {
+        color: white;
+        letter-spacing: 1px;
+        font-size: 22px;
+        margin: 0;
+      }
+
+      .equipment-info__text {
+        max-width: 500px;
+      }
+
+      .equipment-info__link {
+        color: white;
+        font-size: 20px;
       }
     </style>
   </head>
@@ -244,17 +276,27 @@
                   <tr>
                     <!-- Full width Image -->
                     <td colspan="2">
-                      <img class="pickup-image" src="./img/ford-f250-pickup.png" alt="Ford F-250 heavy duty utility pickup" />
+                      <img class="bm-image" src="./img/ford-f250-pickup.png" alt="Ford F-250 heavy duty utility pickup" />
                     </td>
                   </tr>
                   <tr>
-                    <!-- half width image 1 -->
+                    <!-- Image row 1 half width image 1 -->
                     <td>
-                      <img src="./img/school-bus.png" alt="Thomas Freightliner 2007 School Bus" />
+                      <img class="bm-image" src="./img/school-bus.png" alt="Thomas Freightliner 2007 School Bus" />
                     </td>
-                    <!-- half width image 2 -->
+                    <!-- Image row 1 half width image 2 -->
                     <td>
-                      <img src="./img/chevy-blazer.png" alt="2003 Chevy Blazer" />
+                      <img class="bm-image" src="./img/chevy-blazer.png" alt="2003 Chevy Blazer" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Image row 2 half width image 1 -->
+                    <td>
+                      <img class="bm-image" src="./img/upright-lift.png" alt="Upright Lift" />
+                    </td>
+                    <!-- Image row 2 half width image 2 -->
+                    <td>
+                      <img class="bm-image" src="./img/smart-boards.png" alt="2014 Smart Board" />
                     </td>
                   </tr>
                 </table>
@@ -262,6 +304,41 @@
               </td>
             </tr>
             <!-- End of row 4 -->
+
+            <!-- Start of row 5 -->
+            <tr class="row-5">
+              <td class="equipment-info-block">
+                <!-- Second Image grid -->
+                <table cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tbody>
+                    <tr align="center">
+                      <td>
+                        <h3 class="equipment-info__title">
+                          Warehouse Full of Surplus Equipment
+                        </h3>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <p class="equipment-info__text">
+                          FeaturingThomas-Freightliner School Buses including (7) 2006-2007 Newer Body w/ Mercedes Engines / Ford F-250 SD Utl Pickup / Chevy Blazer / Ford Cargo Van / IR Towable Air Compressor / Yamaha ATV / Mowers / Sprayers / Lawn & Facilities Equip / Food Service Equip
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <a class="equipment-info__link" href="#">
+                          Over 200 Photos Now Online
+                        </a>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End of First Image grid -->
+              </td>
+            </tr>
+            <!-- End of row 5 -->
+          
 
             <!-- Start of Hero "Let's you.." row -->
             <tr class="row-2">
