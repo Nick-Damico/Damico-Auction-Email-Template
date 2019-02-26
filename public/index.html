@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html charset=UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <style>
+      body {
+        width: 100%;
+      }
+
+      img {
+        max-width: 100%;
+      }
+
+      /* Header */
+      .main-header {
+        background-color: #517FB9;
+      }
+      .email-wrapper {
+        max-width: 600px;
+        width: 100%;
+      }
+
+      /* Featured Auction */
+      .featured-auction {
+      }
+
+      .featured-auction__banner {
+        background-color: red;
+      }
+
+      .title__featured-auction {
+        color: white;
+        display: inline-block;
+        font-weight: 300;
+        margin: 0;
+      }
+
+      .featured-auction__details {
+        background-image: url('./img/featured-bg.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 330px;
+      }
+
+       .featured-auction__details__title,
+       .featured-auction__details__date-time {
+         font-weight: 300;
+         font-size: 22px;
+         display: inline-block;
+         padding: 4px 15px;
+         border-radius: 8px;
+         margin: 0;
+       }
+
+      .featured-auction__details__title {
+        background-color: rgba(81, 127, 185, 0.7);
+        color: white;
+      }
+
+      .featured-auction__details__text {
+        color: white;
+        font-size: 20px;
+        width: 350px;
+        margin: 8px auto 8px auto;
+        text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+      }
+
+      .featured-auction__details__date-time {
+        background-color: #F7CC31;
+      }
+
+      /* Event Details */
+      .event-details {
+        background-color: #517FB9;
+      }
+
+      .event-details__td {
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+
+      .event-details__title {
+        font-weight: 600;
+        font-size: 26px;
+      }
+
+      .event-details__text {
+        width: 220px;
+        color: white;
+        font-weight: 300;
+        margin-top: 5px;
+      }
+
+      /* Photo Section */
+      .pickup-image {
+        margin-bottom: -6px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Start of HTML Email -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>
+          <!-- Start of Page Wrapper -->
+          <table class="email-wrapper" border="0" align="center" cellspacing="0" cellpadding="0">
+            <!-- Start of row 1 -->
+            <tr class="row-1">
+              <!-- Start Parent Container of .main-header & logo -->
+              <td>
+                <!-- Start of .main-header -->
+                <table class="main-header" width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="height: 100%;">
+                  <tr>
+                    <td>
+                      <!-- Start of logo header -->
+                      <table class="container" width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 10px">
+                        <tr style="font-size: 14px; font-weight: 600;">
+                          <td align="center">
+                            <img src="./img/logo.png" alt="Damico Auctions | David Damico Auctioner" />
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End of logo header -->
+                    </td>
+                  </tr>
+                </table>
+                <!-- End of .main-header -->
+              </td>
+              <!-- End Parent Container of .main-header & logo -->
+            </tr>
+            <!-- End of header row 1 -->
+
+            <!-- Start of row 2 -->
+            <tr class="row-2">
+              <!-- Start of .featured-auction -->
+              <td>
+                <table class="featured-auction" width="100%" align="center" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <!-- .featured-auction__banner -->
+                  <tr class="featured-auction__banner" align="center" style="display: block;padding: 8px;">
+                    <td class="featured-auction__text">
+                      <img src="./img/gavel-icon-left.png" alt="" style="margin: 0 5px -5px 0" />
+                      <h3 class="title__featured-auction">Featured Auction</h3>
+                      <img src="./img/gavel-icon-right.png" alt="" style="margin: 0 0 -5px 5px" />
+                    </td>
+                  </tr>
+                  <!-- End of .featured-auction__banner -->
+                  <!-- Start of .featured-auction__details -->
+                  <tr class="featured-auction__details">
+                    <td>
+                      <table width="100%" align="center" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tbody>
+                          <tr align="center">
+                            <td>
+                              <h3 class="featured-auction__details__title">Live On-Site Auction</h3>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <p class="featured-auction__details__text">
+                                Sarasota County Schools Surplus at Warehouse in Osprey, FL. School
+                              </p>
+                            </td>
+                          </tr>
+                          <tr align="center">
+                            <td>
+                              <p class="featured-auction__details__date-time">Feb 02, 2019 at 8:00 EST</p>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Start of .featured-auction__details -->
+                </table>
+              </td>
+              <!-- Start of .featured-auction -->
+            </tr>
+            <!-- End of row 2 -->
+
+            <!-- Start of row 3 -->
+            <tr class="row-3 event-details">
+              <!-- Event Details Two Column layout -->
+              <td class="event-details__td">
+                <!-- Column One 'You are invited' -->
+                <table width="50%" align="left" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tbody>
+                    <tr>
+                      <td align="center">
+                        <img src="./img/calendar-icon.png" alt="" width="28px">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="event-details__title">
+                        You are invited
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <p class="event-details__text">
+                          Another Great Surplus Auction for the School Board of Sarasota County, FL. Located at their Warehouse in Osprey, FL.
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End of Column One 'You are invited' -->
+                <!-- Column Two 'Event Details' -->
+                <table width="50%" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tbody>
+                    <tr>
+                      <td align="center" height="37px">
+                        <img src="./img/map-icon.png" alt="" width="30px" />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center" class="event-details__title">
+                        Event Details
+                      </td>
+                    </tr>
+                    <tr>
+                      <td align="center">
+                        <p class="event-details__text">
+                          Saturday, February 2nd, 2019 101 Old Venice Rd, OSPREY, FL 34229 Starting at 8:30am ET School Buses & White Fleet Vehicles Selling First!
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- End of Column Two 'Event Details' -->
+              </td>
+              <!-- End of Event Details Two Column layout -->
+            </tr>
+            <!-- End of row 3 -->
+
+            <!-- Start of row 4 -->
+            <tr class="row-4">
+              <td>
+                <!-- First Image grid -->
+                <table cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tr>
+                    <!-- Full width Image -->
+                    <td colspan="2">
+                      <img class="pickup-image" src="./img/ford-f250-pickup.png" alt="Ford F-250 heavy duty utility pickup" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- half width image 1 -->
+                    <td>
+                      <img src="./img/school-bus.png" alt="Thomas Freightliner 2007 School Bus" />
+                    </td>
+                    <!-- half width image 2 -->
+                    <td>
+                      <img src="./img/chevy-blazer.png" alt="2003 Chevy Blazer" />
+                    </td>
+                  </tr>
+                </table>
+                <!-- End of First Image grid -->
+              </td>
+            </tr>
+            <!-- End of row 4 -->
+
+            <!-- Start of Hero "Let's you.." row -->
+            <tr class="row-2">
+              <td class="hero-lets__title" align="center" style="background-color: #fafafa;">
+                <h3 class="section-title--h3" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; vertical-align: middle; color: #333; font-size: 24px; font-weight: 300; letter-spacing: 2px; text-transform: uppercase; padding: 36px 0 20px 0;">Hero Let's you...</h3>
+              </td>
+              <tr style="height: 10px;">
+                <td class="hero-lets__columns">
+                  <!-- Start of Hero Lets Column One -->
+                  <table class="hero-lets__column-one" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                    <tr>
+                      <!-- Notify Icon -->
+                      <td class="icon-notify" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="http://nicholasdamico.net/html-email/hero/bell_icon.png" alt="Notification Icon">
+                      </td>
+                      <!-- Section Title -->
+                      <td class="section-title--notify" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Notify</td>
+                    </tr>
+                    <!-- column one text -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Stay up to date on the latest news.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <a href="#" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; color: #2792ec; font-size: 14px; font-weight: 600; text-decoration: none;">Learn more</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- End of Hero Lets Column One -->
+                  <!-- Start of Hero Lets Column Two -->
+                  <table class="hero-lets__column-two" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                    <tr>
+                      <!-- Share Icon -->
+                      <td class="icon-share" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="http://nicholasdamico.net/html-email/hero/share_icon.png" alt="share Icon">
+                      </td>
+                      <!-- Section Title -->
+                      <td class="section-title--share" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Share</td>
+                    </tr>
+                    <!-- Section Text -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Share the latest industry information.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <a href="#" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; color: #2792ec; font-size: 14px; font-weight: 600; text-decoration: none;">Learn more</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- End of Hero Lets Column Two -->
+                  <!-- Start of Hero Lets Column Three -->
+                  <table class="hero-lets__column-three" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="height: 200px; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 15px 10px; background-color: #fafafa;">
+                    <tr>
+                      <!-- Connect Icon -->
+                      <td class="icon-connect" width="25%" align="left" style="vertical-align: middle;">
+                        <img class="icon" src="http://nicholasdamico.net/html-email/hero/wifi_icon.png" alt="Connection Icon">
+                      </td>
+                      <!-- Section Title -->
+                      <td class="section-title--connect" align="left" width="75%" style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; padding-left: 6px;">Connect</td>
+                    </tr>
+                    <!-- Section Link 'learn more' -->
+                    <tr>
+                      <td colspan="2">
+                        <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Keep in touch with our friends and family.</p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <a href="#" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; color: #2792ec; font-size: 14px; font-weight: 600; text-decoration: none;">Learn more</a>
+                      </td>
+                    </tr>
+                  </table>
+                  <!-- End of Hero Lets Column Three -->
+                </td>
+              </tr>
+            </tr>
+            <!-- End of Hero "Let's you.." row -->
+            <!-- Start of 'World's most advanced App' row -->
+            <tr class="row-3">
+              <td>
+                <table class="most-advanced__table" width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+                  <!-- banner image -->
+                  <tr>
+                    <td align="center" style="padding: 60px 0 40px 0;">
+                      <img class="most-advanced__image" src="http://nicholasdamico.net/html-email/hero/image_head.jpg" alt="">
+                    </td>
+                  </tr>
+                  <!-- 'World's most advanced...' paragraph -->
+                  <tr>
+                    <td>
+                      <h3 class="section-title--h3" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; vertical-align: middle; color: #333; font-size: 24px; font-weight: 300; text-transform: capitalize; margin: 0; padding-bottom: 36px;">
+                        World's most advanced App <br>with High-Tech solutions
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <table class="most-advanced__paragraph-table" width="100%" border="0" align="center" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <!-- Start of paragraphs row -->
+                        <tr>
+                          <!-- paragraph one -->
+                          <td class="most-advanced__paragraph--1" width="50%" style="padding: 0 10px 20px;">
+                            <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">
+                              The Strong museum has collected more than 55,000 video games and related artifacts from the history of gaming.
+                            </p>
+                          </td>
+                          <!-- paragraph two -->
+                          <td class="most-advanced__paragraph--2" width="50%" style="padding: 0 10px 20px;">
+                            <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">
+                              Remote Mouse lets you use your iPhone, Android or Windows Phone as a touchpad to control your onscreen cursor in a pinch.
+                            </p>
+                          </td>
+                        </tr>
+                        <!-- End of paragraphs row -->
+                        <!-- Start of playstore and app store buttons row -->
+                        <tr>
+                          <td align="right" style="padding: 0 10px;">
+                            <img src="http://nicholasdamico.net/html-email/hero/appstore.png" alt="Apple app store logo">
+                          </td>
+                          <td style="padding: 0 10px;">
+                            <img src="http://nicholasdamico.net/html-email/hero/playstore.png" alt="Google Playstore logo">
+                          </td>
+                        </tr>
+                        <!-- End of playstore and app store buttons row -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of 'World's most advanced App' row -->
+            <!-- Start of main row -->
+            <!-- Start of Banner 'One App, One Solution' row -->
+            <tr class="row-4">
+              <td>
+                <table class="one-app__table" width="100%" border="0" align="center" cellspacing="0" cellpadding="0">
+                  <tr>
+                    <td>
+                      <img class="one-app__image" src="http://nicholasdamico.net/html-email/hero/one_app.jpg" alt="One App banner image which shows the apps functionality including locations, voice-over, calendar and health" style="padding-top: 75px;">
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of Banner 'One App, One Solution' row -->
+            <!-- Start of 'All Features Joined Together' row -->
+            <tr class="row-5">
+              <td>
+                <table class="all-features__table" width="100%" border="0" cellspacing="0" cellpadding="0">
+                  <!-- Join Together title row -->
+                  <tr>
+                    <td>
+                      <h3 class="section-title--h3" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; vertical-align: middle; color: #333; font-size: 24px; font-weight: 400; text-transform: capitalize; margin: 0; padding: 75px 0 60px 0;">
+                        All features joined together in one app
+                      </h3>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <!-- three column layout .column-one -->
+                      <table class="all-features__column-one" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <td align="center">
+                            <img src="http://nicholasdamico.net/html-email/hero/watch_screen.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 20px 0 6px 0px;">Sync</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Computer manufacturer Lenovo is getting flak...</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" style="color: #2792ec; font-size: 16px; font-weight: 600; text-decoration: none;">Learn more</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End three column layout .column-one -->
+                      <!-- three column layout .column-two -->
+                      <table class="all-features__column-two" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <td align="center">
+                            <img src="http://nicholasdamico.net/html-email/hero/watch_screen.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 20px 0 6px 0px;">Share</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Hero is a mobile payment system that could...</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" style="color: #2792ec; font-size: 16px; font-weight: 600; text-decoration: none;">Learn more</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End three column layout .column-two -->
+                      <!-- three column layout .column-three -->
+                      <table class="all-features__column-three" width="33.3333333%" border="0" align="left" cellspacing="0" cellpadding="0" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <td align="center">
+                            <img src="http://nicholasdamico.net/html-email/hero/watch_screen.png" alt="">
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <h5 style="vertical-align: middle; color: #333; font-size: 18px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 20px 0 6px 0px;">Stats</h5>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Gemalto says it’s looking into a report that it’s...</p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td align="center">
+                            <a href="#" style="color: #2792ec; font-size: 16px; font-weight: 600; text-decoration: none;">Learn more</a>
+                          </td>
+                        </tr>
+                      </table>
+                      <!-- End three column layout .column-three -->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of 'All Features Joined Together' row -->
+            <!-- Start of 'Details' row -->
+            <tr class="row-6">
+              <td>
+                <table class="details-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 50px 4px; background-color: #f9f9f9; margin-top: 75px;">
+                  <!-- Start of Row One -->
+                  <tr>
+                    <td>
+                      <table class="details-row--one" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <!-- Start of column one  -->
+                          <td class="details-column--one" style="width: 50%;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                              <tr>
+                                <td style="width: 20%;">
+                                  <img src="http://nicholasdamico.net/html-email/hero/phone_icon.png" alt="" />
+                                </td>
+                                <td style="width: 80%;">
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">Responsive Layout</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Tanjin is one of nearly 2,000 people to have landed on Italy’s southernmost.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column one -->
+                          <!-- Start of column two -->
+                          <td class="details-column--two" style="width: 50%;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                              <tr>
+                                <td style="width: 20%;">
+                                  <img src="http://nicholasdamico.net/html-email/hero/phone_icon-48.png" alt="" />
+                                </td>
+                                <td style="width: 70%;">
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">Retina Ready</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">The decision precluded a more aggressive, pre-rush hour response to help.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column two -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of Row One -->
+                  <!-- Start of Row Two -->
+                  <tr>
+                    <td>
+                      <table class="details-row--two" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <!-- Start of column one  -->
+                          <td class="details-column--one" width="50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                              <tr>
+                                <td width="20%">
+                                  <img src="http://nicholasdamico.net/html-email/hero/check_icon.png" alt="" />
+                                </td>
+                                <td width="80%">
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">various skins</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Research shows that women politicians are considered more ethical than.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column one -->
+                          <!-- Start of column two -->
+                          <td class="details-column--two" style="width: 50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                              <tr>
+                                <td width="20%">
+                                  <img src="http://nicholasdamico.net/html-email/hero/settings_icon.png" alt="" />
+                                </td>
+                                <td>
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">great performance</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Asian stocks post modest gains Tues., oil rises on Greek debt talks.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column two -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of Row Two -->
+                  <!-- Start of Row Three -->
+                  <tr>
+                    <td>
+                      <table class="details-row--three" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 0 0 22px 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <!-- Start of column one  -->
+                          <td class="details-column--one" width="50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-right: 10px;">
+                              <tr>
+                                <td width="20%">
+                                  <img src="http://nicholasdamico.net/html-email/hero/menu_icon.png" alt="" />
+                                </td>
+                                <td width="80%">
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">userfriendly menus</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Regional cooperation can bring countries of a region close together and can reduce.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column one -->
+                          <!-- Start of column two -->
+                          <td class="details-column--two" style="width: 50%">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="padding-left: 10px;">
+                              <tr>
+                                <td width="20%">
+                                  <img src="http://nicholasdamico.net/html-email/hero/share_icon.png" alt="" />
+                                </td>
+                                <td>
+                                  <h5 style="vertical-align: middle; color: #333; font-size: 14px; font-weight: 400; letter-spacing: 2px; text-transform: uppercase; margin: 0; padding: 0">social share</h5>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td colspan="2">
+                                  <p style="color: #7F8887; font-weight: 400; font-size: 14px; line-height: 1.8;">Muriel Bowser’s administration says move is unrelated to charges that encryption.</p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                          <!-- End of column two -->
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- End of Row Three -->
+                </table>
+              </td>
+            </tr>
+            <!-- End of 'Details' row -->
+            <!-- Start of 'Interested in App' row -->
+            <tr class="row-7">
+              <td>
+                <table class="interested-in__inner" style="background: rgb(79,226,242);  background: -moz-linear-gradient(-45deg, rgba(79,226,242,1) 0%, rgba(42,128,214,1) 100%); background: -webkit-linear-gradient(-45deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); background: linear-gradient(135deg, rgba(79,226,242,1) 0%,rgba(42,128,214,1) 100%); color: white; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; padding: 65px 0; height: 100%; width: 100%;">
+                  <tr>
+                    <td align="center">
+                      <h3 style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif; vertical-align: middle; font-size: 24px; font-weight: 300; text-transform: capitalize; margin: 0; padding-bottom: 30px;">Interested in our App?</h3>
+                      <p style="font-size: 14px; line-height: 1.5; padding: 0 0 50px; font-style: italic; max-width: 400px; margin: 0;">Muriel Bowser’s administration says move is unrelated to charges that encryption caused failures in Metro.</p>
+                      <a href="#" style="border-radius: 2px; border: 2px solid white; padding: 10px 20px; font-size: 12px; font-weight: 600; text-decoration: none; color: white; text-transform: uppercase;">request a quote</a>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of ''Interested in App'' row -->
+            <!-- Start of 'Footer' row -->
+            <tr class="row-8">
+              <td>
+                <table class="details-table" width="100%" border="0" cellspacing="0" cellpadding="0" style="padding: 45px 0 20px; background-color: #f9f9f9; margin-top: 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tr>
+                    <td align="center">
+                      <h2 style="font-weight: 600; font-size: 32px; color: #1b1b1b; margin: 0;">Hero</h2>
+                    </td>
+                  </tr>
+                  <tr>
+                    <!-- Social Icons -->
+                    <td align="center">
+                      <table class="details-table" width="250px" border="0" cellspacing="0" cellpadding="0" style="padding: 50px 4px; background-color: #f9f9f9; margin-top: 0; font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tr>
+                          <td align="center">
+                            <a href="http://www.twitter.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/twitter_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="http://facebook.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/facebook_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="http://google.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/google_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="http://pinterest.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/pinterest_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="http://linkedin.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/linkedin_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                          <td align="center">
+                            <a href="http://youtube.com">
+                              <img src="http://nicholasdamico.net/html-email/hero/youtube_icon.png" alt="Twitter Icon">
+                            </a>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <!-- Copyright  -->
+                  <tr>
+                    <td align="center" style="width: 100%; color: #B4B4B4; font-size: 12px;">
+                      <small>&copy; 20XX All rights Reserved - Yourcompany. Is your inbox overflowing? <a href="#" style="color: #2792ec;">Unsubscribe</a></small>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of 'Footer' row -->
+          </table>
+          <!-- End of Page Wrapper -->
+        </td>
+      </tr>
+    </table>
+    <!-- End of HTML Email -->
+  </body>
+</html>
