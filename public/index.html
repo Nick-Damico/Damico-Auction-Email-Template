@@ -31,6 +31,14 @@
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7aa31', endColorstr='#f7cc31',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
       }
 
+      .blue-bg {
+        background: rgb(86,158,187); /* Old browsers */
+        background: -moz-linear-gradient(-45deg, rgba(86,158,187,1) 0%, rgba(81,127,216,1) 100%); /* FF3.6-15 */
+        background: -webkit-linear-gradient(-45deg, rgba(86,158,187,1) 0%,rgba(81,127,216,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        background: linear-gradient(135deg, rgba(86,158,187,1) 0%,rgba(81,127,216,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#569ebb', endColorstr='#517fd8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+      }
+
       /* Header */
       .main-header {
         background-color: #517FB9;
@@ -145,6 +153,23 @@
 
       .everything-sells__subtitle {
         font-size: 24px;
+      }
+
+      /* Terms & Question Info */
+      .terms-block__title,
+      .quest-info__title {
+        margin: 0;
+      }
+
+      .terms-block__text,
+      .quest-info__text {
+        color: white;
+        font-weight: 300;
+      }
+
+      .terms-block__link,
+      .quest-info__link {
+        color: #F7CC31;
       }
     </style>
   </head>
@@ -400,6 +425,69 @@
               </td>
             </tr>
             <!-- End of row 6 -->
+
+            <!-- Start for row 7 -->
+            <tr class="row-7">
+              <td class="blue-bg" style="padding: 40px 0" align="center">
+                <table width="100%" align="left" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                  <tr>
+                    <!-- Column 1 'Auction Terms' -->
+                    <td width="50%">
+                      <table align="center" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tbody align="center">
+                          <tr>
+                            <td>
+                              <h2 class="terms-block__title">Auction Terms</h2>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="terms-block__text">
+                                15% Buyers Premium <br />
+                                Payment by Cash, Credit Card <br />
+                                (Visa / MC / Discover / Amex)
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a class="terms-block__link" href="#">For Full Terms and Auction Details</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                    <!-- Column 2 'Questions & info' -->
+                    <td width="50%">
+                      <table align="center" cellspacing="0" cellpadding="0" align="center" style="font-family: 'Open Sans', 'Segoe UI', Tahoma, sans-serif;">
+                        <tbody align="center">
+                          <tr>
+                            <td>
+                              <h2 class="quest-info__title">Questions &amp; Info</h2>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p class="quest-info__text">
+                                David D'Amico / Auctioneer<br />
+                                Call: <a class="quest-info__link" href="#">(941) 377-6310</a><br />
+                                Email: <a class="quest-info__link" href="#">ddaco@att.net</a>
+                              </p>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <a class="quest-info__link" href="#">ab2209 / Sarasota / au1441</a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End of row 7 -->
 
             <!-- Start of Hero "Let's you.." row -->
             <tr class="row-2">
